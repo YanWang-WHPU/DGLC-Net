@@ -1,0 +1,5 @@
+{
+  "description": "Source-training example using CLI defaults; not a recovered historical training configuration.",
+  "script": "train_hsi_uda.py",
+  "args": ["--mode", "source", "--data-root", "processed_hsi_uda", "--out", "outputs/source", "--epochs-source", "20", "--batch-size", "4", "--num-workers", "0", "--seed", "2026"]
+}

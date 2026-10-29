@@ -1,0 +1,5 @@
+{
+  "description": "Archived final router parameters. Budgets apply globally over the supplied patch stack and depend on its extent and ordering.",
+  "script": "apply_local_consensus_router.py",
+  "args": ["--base", "outputs/base/predictions.npz", "--window", "51", "--restore-top-k", "4400", "--flip-top-k", "4100", "--ignore-zero-eval", "--out-dir", "outputs/local_consensus", "--name", "local_consensus_w51_r4400_b4100"]
+}

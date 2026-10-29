@@ -1,0 +1,5 @@
+{
+  "description": "Two-teacher target-group example using recovered no-boundary-gate values; unrecorded smoothing options are example choices. This is separate from the archived local-router input.",
+  "script": "eval_ensemble_proto_refine.py",
+  "args": ["--data-root", "processed_hsi_uda", "--teacher-ckpts", "checkpoints/mix/uda_best.pt", "checkpoints/proto/uda_best.pt", "--teacher-weights", "0.57", "0.43", "--anchor-ckpt", "checkpoints/source/source_best.pt", "--proto-mode", "target_group", "--temperature", "0.68", "--strength", "0.008", "--smooth-mode", "class", "--target-proto-quantile", "0.9", "--target-proto-cap", "4096", "--target-alpha", "0.1", "--target-group-strength", "0.2", "--ignore-zero-eval", "--num-workers", "0", "--out", "outputs/group_memory/metrics.json", "--dump", "outputs/group_memory/predictions.npz"]
+}

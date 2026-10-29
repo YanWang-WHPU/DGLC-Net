@@ -1,0 +1,5 @@
+# Training, evaluation, and local-consensus routing.
+# Install the PyTorch build appropriate for your hardware first.
+numpy>=1.24
+scipy>=1.10
+torch>=2.1
